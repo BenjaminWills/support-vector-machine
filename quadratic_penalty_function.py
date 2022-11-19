@@ -166,5 +166,5 @@ def quadratic_penalty_method(
         x = optimise.minimize(quadratic_penalty,x)['x']
         iterations += 1
         gamma *= delta
-    print(iterations)
+    print(f'Number of iterations: {iterations}')
     return x
